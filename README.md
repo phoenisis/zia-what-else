@@ -5,10 +5,8 @@ Comme vous pouvez le constater dans l'UML, notre API est petite et les classes q
 Notez que par abus de langage, à chaque fois que nous parlerons de bibliothèques dynamiques, nous abrégerons par DLL (qui de par la signification de l'acronyme se prête bien à cet abus de langage) mais il s'agit bien de bibliothèques dynamiques quel que soit le système cible sur lequel est compilé le Zia. <br>
 </div>
 
-### [ 1. Description des classes ] (Description des classes)
-
-### [ 2. Exemple de module ] (Exemple de module)
-
-### [ 3. Crédits ] (Crédits)
+ [ 1. Description des classes ] (Description des classes) <br>
+ [ 2. Exemple de module ] (Exemple de module) <br>
+ [ 3. Crédits ] (Crédits) <br>
 
 =============
