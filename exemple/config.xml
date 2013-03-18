@@ -26,11 +26,11 @@
 
 <!-- Server Description -->
 <Server>
-	<port="20"/>
-	<buffsize="512"/>
-	<thread="2"/>
-	<clientMax="42"/>
-	<path="c:\\">
+	<port name="20"/>
+	<buffsize size="512"/>
+	<thread value="2"/>
+	<clientMax value="42"/>
+	<root path="/etc/server/">
 </Server>
 
 <!-- Default Serveur Description if not specified
