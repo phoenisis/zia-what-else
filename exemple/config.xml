@@ -1,0 +1,45 @@
+<!-- Define execution status and order -->
+<Exec>
+	<filter name="zia_php" enable="on"/>
+</Exec>
+
+<!-- Modules Declaration -->
+<Mod>
+	<module name="zia_php" version="0.42"/>
+	<dependency>
+		<module name="name" version="0.4"/>
+		<service name="network"/>
+	</dependency>
+</Mod>
+
+<!-- Services Declaration -->
+<Services>
+	<service name="network">
+		<argument name="port" value="80"/>
+	</service>
+</Services>
+
+<!-- Library Declatation -->
+<Lib>
+	<library name="lib_Unix" path="/etc/lib/lib.so"/>
+</Lib>
+
+<!-- Server Description -->
+<Server>
+	<port="20"/>
+	<buffsize="512"/>
+	<thread="2"/>
+	<clientMax="42"/>
+	<path="c:\\">
+</Server>
+
+<!-- Default Serveur Description if not specified
+<Server>
+	<port="20"/>
+	<buffsize="512"/>
+	<thread="2"/>
+	<clientMax="42"/>
+	<path="c:\\">
+</Server>
+-->
+
