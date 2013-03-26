@@ -10,7 +10,8 @@ extern "C"
 		m->managedDirectives = CONNECTION_INIT | PREPROCESS_REQUEST | PROCESS_FINISHED_RESPONSE;
 		m->managesHeaderOnly = true;
 		m->name = "crypting";
-		m->nbDirectives = 3; 
+		m->nbDirectives = 3;
+		return (m);
 	}
 
 	Directives *		get_directives()
