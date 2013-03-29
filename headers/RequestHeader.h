@@ -19,8 +19,8 @@ public:
 	std::string const &		getValueForKey(std::string const & key) const;
 	std::string const &		getVersion() const;
 	bool					hasKey(std::string const & value);
-	void					setStatusCode(std::string const & statusCode);
-	void					setStatusMessage(std::string const & statusMessage);
+	void					setCommand(std::string const & statusCode);
+	void					setArg(std::string const & statusMessage);
 	void					setVersion(std::string const & version);
 };
 
