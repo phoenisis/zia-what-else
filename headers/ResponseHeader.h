@@ -14,7 +14,6 @@ public:
 	ResponseHeader();
 	ResponseHeader(std::map<std::string, std::string> const & options, std::string const & statusCode, std::string const & statusMessage, std::string const & version);
 	~ResponseHeader();
-	std::string const &		getHeaderValue(std::string const & headerAttribut) const;
 	std::string	const &		getStatusCode() const;
 	std::string const &		getStatusMessage() const;
 	std::string const &		getValueForKey(std::string const & key) const;
