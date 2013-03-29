@@ -5,7 +5,7 @@
 class Body
 {
 	char		*_body;
-	int			_lenght;
+	int			_length;
 public:
 	Body(char *body, int lenght);
 	~Body();
