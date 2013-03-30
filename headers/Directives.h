@@ -9,9 +9,8 @@ class Directives
 {
 public:
 	virtual ~Directives() {};
-	virtual	void	callDirective(DirectivesOrder directiveorder, Request & request);
-	virtual	void	callDirective(DirectivesOrder directiveorder, Response & response);
-	virtual	void	init();
+	virtual	void	callDirective(DirectivesOrder directiveorder, Request & request, Response & response) = 0;
+	virtual	void	init() = 0;
 };
 
 
