@@ -33,16 +33,12 @@ void			Crypt::init()
 	this->_idx = (rand() % 9) + 1;
 }
 
-void			Crypt::callDirective(DirectivesOrder dir, Request & req)
-{
-	if (dir == PREPROCESS_REQUEST)
-		this->uncryptRequest(req);
-}
-
-void			Crypt::callDirective(DirectivesOrder dir, Response & res)
+void			Crypt::callDirective(DirectivesOrder dir, Request & req, Response & res)
 {
 	if (dir == CONNECTION_INIT)
 		this->sendIdx(res);
+	else if (dir == PREPROCESS_REQUEST)
+		this->uncryptRequest(req);
 	else if (dir == PROCESS_FINISHED_RESPONSE)
 		this->cryptResponse(res);
 }
