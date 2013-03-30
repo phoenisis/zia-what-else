@@ -21,6 +21,7 @@ public:
 	void					setCommand(std::string const & statusCode);
 	void					setArg(std::string const & statusMessage);
 	void					setVersion(std::string const & version);
+	void					setValue(std::string const & key, std::string const & value);
 };
 
 #endif // !_REQUESTHEADER_H_
