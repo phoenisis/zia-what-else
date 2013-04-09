@@ -10,8 +10,8 @@ class Request {
 	RequestHeader	_header;
 	Body			_body;
 public:
-	Request (char *buffer, int bufferLength);
-	~Request ();
+	Request(char *buffer, int bufferLength);
+	~Request();
 	Body &			getBody();
 	char			*getBuffer();
 	RequestHeader &	getHeader();

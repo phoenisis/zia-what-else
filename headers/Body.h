@@ -7,6 +7,7 @@ class Body
 	char		*_body;
 	int			_length;
 public:
+	Body();
 	Body(char *body, int lenght);
 	~Body();
 	char *					getBody();
