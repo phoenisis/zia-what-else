@@ -11,7 +11,6 @@ typedef SOCKET t_socket;
 # else
 # include <netinet/in.h>
 # include <sys/socket.h>
-# include <netinet/in.h>
 # include <netinet/ip.h>
 typedef	int		t_socket;
 # endif
@@ -20,8 +19,8 @@ class Directives
 {
 public:
 	virtual ~Directives() {};
-	virtual	void	callDirective(DirectivesOrder directiveorder, Request & request, SOCKET socket, struct sockaddr_in & connexionInfos) = 0;
-	virtual	void	callDirective(DirectivesOrder directiveorder, Response & response, SOCKET socket, struct sockaddr_in & connexionInfos) = 0;
+	virtual	void	callDirective(DirectivesOrder directiveorder, Request & request, t_socket socket, struct sockaddr_in & connexionInfos) = 0;
+	virtual	void	callDirective(DirectivesOrder directiveorder, Response & response, t_socket socket, struct sockaddr_in & connexionInfos) = 0;
 	virtual	void	init() = 0;
 };
 
