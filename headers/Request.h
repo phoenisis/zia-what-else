@@ -16,7 +16,7 @@ public:
 	char			*getBuffer();
 	RequestHeader &	getHeader();
 	int				getLength() const;
-	void			separate();
+	bool			separate();
 };
 
 #endif // !_REQUEST_H_
