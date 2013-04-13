@@ -19,8 +19,7 @@ class Directives
 {
 public:
 	virtual ~Directives() {};
-	virtual	void	callDirective(DirectivesOrder directiveorder, Request & request, t_socket socket, struct sockaddr_in & connexionInfos) = 0;
-	virtual	void	callDirective(DirectivesOrder directiveorder, Response & response, t_socket socket, struct sockaddr_in & connexionInfos) = 0;
+	virtual	void	callDirective(DirectivesOrder directiveorder, Request & request, Response & response, t_socket socket, struct sockaddr_in & connexionInfos) = 0;
 	virtual	void	init() = 0;
 };
 
