@@ -5,15 +5,16 @@
 #include "Response.h"
 #include "DirectivesOrder.h"
 
-# ifdef _WIN32
-# include	<WinSock2.h>
-typedef SOCKET t_socket;
-# else
-# include <netinet/in.h>
-# include <sys/socket.h>
-# include <netinet/ip.h>
-typedef	int		t_socket;
-# endif
+#if defined(_WIN64)
+    typedef unsigned __int64 UINT_PTR;
+#elif defined(_WIN32)
+    typedef _W64 unsigned int UINT_PTR;
+#else
+	typedef int	UINT_PTR;
+#endif
+
+typedef UINT_PTR t_socket;
+struct sockaddr_in;
 
 class Directives
 {
